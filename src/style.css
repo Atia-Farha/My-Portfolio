@@ -54,12 +54,12 @@ header {
     z-index: 100;
     width: 100%;
     height: 3em;
+    padding: 1em;
     background-color: white;
     border-bottom: 1px ridge gray;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
 }
 
 header a {
@@ -260,7 +260,7 @@ main {
 .info {
     width: 100%;
     min-height: 100vh;
-    padding: 6em 2em;
+    padding: 6em 0;
     background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='%23ffffffff'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='%23edededff' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,-10)' fill='url(%23a)'/></svg>");
     box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -276,6 +276,7 @@ h2 {
 
 .about {
     width: 100%;
+    padding: 0 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,11 +286,13 @@ h2 {
 
 .about p {
     max-width: 1200px;
+    text-align: justify;
     font-size: 1.3em;
 }
 
 .skills {
     width: 100%;
+    padding: 0 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -445,6 +448,7 @@ h2 {
 .projects {
     width: 100%;
     max-width: 1200px;
+    padding: 0 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -773,6 +777,5 @@ footer div a svg {
         justify-content: center;
         align-items: center;
         gap: 3em;
-
     }
 }
