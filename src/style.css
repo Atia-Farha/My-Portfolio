@@ -29,8 +29,8 @@ a {
 
 .gotop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px;
+    right: 5px;
     z-index: 99;
     padding: 0.3em 0.3em 0;
     transition: transform 0.4s ease;
@@ -453,7 +453,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4em;
+    gap: 2em;
 }
 
 .project-container {
