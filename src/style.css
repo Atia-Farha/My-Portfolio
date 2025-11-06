@@ -179,7 +179,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+}
+
+.intro {
+    font-size: clamp(0em, 5vw, 1em);
 }
 
 .name {
@@ -187,13 +190,12 @@ main {
 }
 
 .loader {
-    font-size: 25px;
+    font-size: clamp(0em, 4vw, 0.8em);
     box-sizing: content-box;
     height: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: left;
     -webkit-box-sizing: content-box;
 }
 
@@ -280,7 +282,7 @@ h2 {
 
 .about {
     width: 100%;
-    padding: 0 2em;
+    padding: 0 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
