@@ -193,8 +193,6 @@ main {
     font-size: clamp(0em, 6vw, 0.8em);
     box-sizing: content-box;
     height: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-sizing: content-box;
 }
@@ -282,6 +280,7 @@ h2 {
 
 .about {
     width: 100%;
+    max-width: 1600px;
     padding: 0 1em;
     display: flex;
     flex-direction: column;
@@ -292,13 +291,62 @@ h2 {
 }
 
 .about p {
-    max-width: 1200px;
     text-align: justify;
     font-size: 1.3em;
 }
 
+.education {
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 1em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.education-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.tack-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 8px;
+    width: 1.5px;
+    height: 100%;
+    background-color: black;
+}
+
+.inst {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.inst-decription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inst-info {
+    text-align: left;
+}
+
 .skills {
     width: 100%;
+    max-width: 1600px;
     padding: 0 1em;
     display: flex;
     flex-direction: column;
@@ -320,7 +368,6 @@ h2 {
 }
 
 .skill-container {
-    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -456,7 +503,7 @@ h2 {
 
 .achievements {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     padding: 0 1em;
     display: flex;
     flex-direction: column;
@@ -466,12 +513,13 @@ h2 {
 }
 
 .achievement-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     text-align: justify;
-    gap: 1em;
+    gap: 2em;
 }
 
 .achievement {
@@ -488,11 +536,21 @@ h2 {
 
 .achievement h3 {
     flex-shrink: 0;
+    margin-left: 0.5em;
+}
+
+.circle {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    margin: 8px -5px;
+    background-color: black;
+    border-radius: 50%;
 }
 
 .projects {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     padding: 0 2em;
     display: flex;
     flex-direction: column;
@@ -512,7 +570,7 @@ h2 {
 }
 
 .project {
-    max-width: 400px;
+    max-width: 350px;
     padding: 1.5em;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -529,71 +587,76 @@ h2 {
 }
 
 .project:nth-child(1) {
+    background-color: rgba(104, 214, 104, 0.7);
+    border: 3px solid rgba(104, 214, 104);
+}
+
+.project:nth-child(2) {
     background-color: rgba(153, 255, 153, 0.7);
     border: 3px solid rgb(153, 255, 153);
 }
 
-.project:nth-child(2) {
+.project:nth-child(3) {
     background-color: rgba(153, 255, 204, 0.7);
     border: 3px solid rgb(153, 255, 204);
 }
 
-.project:nth-child(3) {
+.project:nth-child(4) {
     background-color: rgba(174, 251, 251, 0.7);
     border: 3px solid rgb(174, 251, 251);
 }
 
-.project:nth-child(4) {
+.project:nth-child(5) {
     background-color: #9DDCFF;
     border: 3px solid #7dc4ec;
 }
 
-.project:nth-child(5) {
+.project:nth-child(6) {
     background-color: rgba(204, 204, 255, 0.7);
     border: 3px solid rgb(204, 204, 255);
 }
 
-.project:nth-child(6) {
+.project:nth-child(7) {
     background-color: rgba(204, 153, 255, 0.7);
     border: 3px solid rgb(204, 153, 255);
 }
 
-.project:nth-child(7) {
+.project:nth-child(8) {
     background-color: #ffc9f0;
     border: 3px solid #f5aee1;
 }
 
-.project:nth-child(8) {
+.project:nth-child(9) {
     background-color: rgba(241, 192, 192, 0.7);
     border: 3px solid rgb(241, 192, 192);
 }
 
-.project:nth-child(9) {
+.project:nth-child(10) {
     background-color: #FFAAAA;
     border: 3px solid #FF9898;
 }
 
-.project:nth-child(10) {
+.project:nth-child(11) {
     background-color: rgba(234, 91, 111, 0.7);
     border: 3px solid rgb(234, 91, 111);
 }
 
-.project:nth-child(11) {
+.project:nth-child(12) {
     background-color: rgba(250, 165, 51, 0.7);
     border: 3px solid rgb(250, 165, 51);
 }
 
-.project:nth-child(12) {
+.project:nth-child(13) {
     background-color: #FFE68C;
     border: 3px solid #EECD56;
 }
 
-.project:nth-child(13) {
+.project:nth-child(14) {
     background-color: rgba(255, 204, 153, 0.7);
     border: 3px solid rgb(255, 204, 153);
 }
 
-.project:nth-child(14) {
+.project:nth-child(15) {
     background-color: rgba(254, 226, 173, 0.7);
     border: 3px solid rgb(254, 226, 173);
 }
@@ -731,6 +794,8 @@ footer {
 }
 
 footer div {
+    width: 100%;
+    max-width: 1600px;
     display: flex;
     justify-content: center;
     align-items: center;
