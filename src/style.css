@@ -25,6 +25,7 @@ body {
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 .gotop {
@@ -626,41 +627,6 @@ h2 {
     border: 3px solid #f5aee1;
 }
 
-.project:nth-child(9) {
-    background-color: rgba(241, 192, 192, 0.7);
-    border: 3px solid rgb(241, 192, 192);
-}
-
-.project:nth-child(10) {
-    background-color: #FFAAAA;
-    border: 3px solid #FF9898;
-}
-
-.project:nth-child(11) {
-    background-color: rgba(234, 91, 111, 0.7);
-    border: 3px solid rgb(234, 91, 111);
-}
-
-.project:nth-child(12) {
-    background-color: rgba(250, 165, 51, 0.7);
-    border: 3px solid rgb(250, 165, 51);
-}
-
-.project:nth-child(13) {
-    background-color: #FFE68C;
-    border: 3px solid #EECD56;
-}
-
-.project:nth-child(14) {
-    background-color: rgba(255, 204, 153, 0.7);
-    border: 3px solid rgb(255, 204, 153);
-}
-
-.project:nth-child(15) {
-    background-color: rgba(254, 226, 173, 0.7);
-    border: 3px solid rgb(254, 226, 173);
-}
-
 .lang {
     width: 100%;
     display: flex;
@@ -703,6 +669,41 @@ h2 {
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
+}
+
+.see-more {
+    width: 100%;
+    max-width: 1600px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+
+.see-more a {
+    cursor: pointer;
+    padding: 0.5em 1em;
+    background-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+}
+
+.see-more a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.see-more a:active {
+    scale: 0.95;
 }
 
 .contact {
@@ -775,10 +776,19 @@ button {
     border: 0;
     border-radius: 5px;
     color: white;
+    transition: background-color 0.5s ease;
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -ms-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 button:active {
-    background-color: rgb(54, 54, 54);
+    scale: 0.95;
 }
 
 footer {

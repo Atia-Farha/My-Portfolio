@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Megrim&family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    cursor: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 82 84" fill="none" > <path d="M41.5816 1.21606C39.7862 5.82482 40.3852 10.0977 40.5593 14.9633C40.7854 21.2812 40.9774 27.5593 41.4363 33.8661" stroke="%23000000" stroke-width="1.9" stroke-linecap="round" fill="%23000000" /> <path d="M41.0651 45.1798C39.7505 51.5096 40.3418 57.6794 40.8893 64.0791C41.4093 70.1568 42.1389 76.2117 42.8566 82.2682" stroke="%23000000" stroke-width="1.9" stroke-linecap="round" fill="%23000000" /> <path d="M1.13413 46.6647C5.16696 44.8703 8.96881 44.7974 13.3092 44.5029C19.8761 44.0572 26.2025 43.2089 32.656 41.952" stroke="%23000000" stroke-width="1.9" stroke-linecap="round" fill="%23000000" /> <path d="M47.2629 40.0959C58.4139 39.3819 69.3895 37.5305 80.4472 35.9965" stroke="%23000000" stroke-width="1.9" stroke-linecap="round" fill="%23000000" /> <path d="M49.3429 34.6508L52.917 28.1667" stroke="%23000000" stroke-width="1.9" stroke-linecap="round" fill="%23000000" /> <path d="M32.9786 50.3504L28.6387 54.6391" stroke="%23000000" stroke-width="1.9" stroke-linecap="round" fill="%23000000" /> <path d="M52.6361 48.6656L56.9506 51.5758" stroke="%23000000" stroke-width="1.9" stroke-linecap="round" fill="%23000000" /> <path d="M31.549 30.8471C26.8741 29.4323 22.7143 27.3543 18.2738 25.3586" stroke="%23000000" stroke-width="1.9" stroke-linecap="round" fill="%23000000" /> </svg>') 20 20, auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.gotop {
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    z-index: 99;
+    padding: 0.3em 0.3em 0;
+    transition: transform 0.4s ease;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+}
+
+.gotop:active {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 3em;
+    padding: 1em;
+    background-color: white;
+    border-bottom: 1px ridge gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header a {
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Megrim', cursive;
+}
+
+.logo {
+    font-family: 'Megrim', cursive;
+    background: #42a7e1;
+    padding: 0px 7px 0px 7px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 900;
+}
+
+.part1 {
+    color: black;
+    font-weight: 900;
+}
+
+.part2 {
+    color: black;
+    font-weight: 300;
+}
+
+.projects {
+    width: 100%;
+    max-width: 1600px;
+    padding: 5em 2em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+}
+
+.project-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+}
+
+.project {
+    max-width: 350px;
+    padding: 1.5em;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2em;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.project:nth-child(1) {
+    background-color: rgba(104, 214, 104, 0.7);
+    border: 3px solid rgba(104, 214, 104);
+}
+
+.project:nth-child(2) {
+    background-color: rgba(153, 255, 153, 0.7);
+    border: 3px solid rgb(153, 255, 153);
+}
+
+.project:nth-child(3) {
+    background-color: rgba(153, 255, 204, 0.7);
+    border: 3px solid rgb(153, 255, 204);
+}
+
+.project:nth-child(4) {
+    background-color: rgba(174, 251, 251, 0.7);
+    border: 3px solid rgb(174, 251, 251);
+}
+
+.project:nth-child(5) {
+    background-color: #9DDCFF;
+    border: 3px solid #7dc4ec;
+}
+
+.project:nth-child(6) {
+    background-color: rgba(204, 204, 255, 0.7);
+    border: 3px solid rgb(204, 204, 255);
+}
+
+.project:nth-child(7) {
+    background-color: rgba(204, 153, 255, 0.7);
+    border: 3px solid rgb(204, 153, 255);
+}
+
+.project:nth-child(8) {
+    background-color: #ffc9f0;
+    border: 3px solid #f5aee1;
+}
+
+.project:nth-child(9) {
+    background-color: rgba(241, 192, 192, 0.7);
+    border: 3px solid rgb(241, 192, 192);
+}
+
+.project:nth-child(10) {
+    background-color: #FFAAAA;
+    border: 3px solid #FF9898;
+}
+
+.project:nth-child(11) {
+    background-color: rgba(234, 91, 111, 0.7);
+    border: 3px solid rgb(234, 91, 111);
+}
+
+.project:nth-child(12) {
+    background-color: rgba(250, 165, 51, 0.7);
+    border: 3px solid rgb(250, 165, 51);
+}
+
+.project:nth-child(13) {
+    background-color: #FFE68C;
+    border: 3px solid #EECD56;
+}
+
+.project:nth-child(14) {
+    background-color: rgba(255, 204, 153, 0.7);
+    border: 3px solid rgb(255, 204, 153);
+}
+
+.project:nth-child(15) {
+    background-color: rgba(254, 226, 173, 0.7);
+    border: 3px solid rgb(254, 226, 173);
+}
+
+.lang {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.lang p {
+    background-color: black;
+    color: white;
+    padding: 0 0.5em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.link a {
+    transition: transform 0.4s ease;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+}
+
+.link a:hover {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+footer {
+    padding: 2em 1em 1em;
+    border-top: 1px ridge gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    text-align: center;
+}
+
+footer div {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    text-align: center;
+}
+
+footer div a {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+footer div a:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+footer div a svg {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.facebook svg {
+    color: #000000;
+}
+
+.facebook:hover svg {
+    color: #0866FF;
+}
+
+.instagram svg {
+    color: #000000;
+}
+
+.instagram:hover svg {
+    color: #FE0464;
+}
+
+.discord circle {
+    color: #000000;
+}
+
+.discord:hover circle {
+    color: #5966F1;
+}
+
+.linkedin svg {
+    color: #000000;
+}
+
+.linkedin:hover svg {
+    color: #0A66C2;
+}
+
+.github svg {
+    color: #000000;
+}
+
+.github:hover svg {
+    color: #24292E;
+}
+
+.leetcode svg {
+    color: #000000;
+}
+
+.leetcode:hover svg {
+    color: #FFA116;
+}
+
+.codeforces svg {
+    color: #000000;
+}
+
+.codeforces:hover svg {
+    color: #1787CA;
+}
