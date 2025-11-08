@@ -563,14 +563,15 @@ h2 {
 
 .project-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
     text-align: center;
 }
 
 .project {
+    flex: 1 1 300px;
     max-width: 350px;
     padding: 1.5em;
     border-radius: 5px;
@@ -672,8 +673,8 @@ h2 {
 }
 
 .see-more {
-    width: 100%;
-    max-width: 1600px;
+    flex: 1 1 300px;
+    max-width: 350px;
     padding: 1em;
     display: flex;
     flex-direction: column;
