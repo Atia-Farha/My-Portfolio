@@ -28,6 +28,11 @@ a {
     text-decoration: none;
 }
 
+.text-mute {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.95em;
+}
+
 .gotop {
     position: fixed;
     bottom: 15px;
@@ -334,6 +339,15 @@ h2 {
     gap: 1em;
 }
 
+.circle {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    margin: 8px -5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
 .inst-decription {
     display: flex;
     flex-direction: column;
@@ -540,13 +554,8 @@ h2 {
     margin-left: 0.5em;
 }
 
-.circle {
-    flex-shrink: 0;
-    width: 12px;
-    height: 12px;
-    margin: 8px -5px;
-    background-color: black;
-    border-radius: 50%;
+.achievement-content {
+    margin-top: 1px;
 }
 
 .projects {
