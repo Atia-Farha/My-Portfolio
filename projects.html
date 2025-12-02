@@ -37,8 +37,8 @@
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow">
 
-    <link rel="stylesheet" href="/src/projects.css">
-    <script src="" defer></script>
+    <link rel="stylesheet" href="/src/css/projects.css">
+    <script src="/src/js/script.js" defer></script>
 </head>
 
 <body>
@@ -47,9 +47,26 @@
     </a>
 
     <header>
-        <a href="/index.html">
-            <span class="logo">A</span><span class="part1">tia <span class="part2">Farha</span>
-        </a>
+        <div class="nav-main">
+            <a href="./index.html" class="brand">
+                <span class="logo">A</span><span class="part1">tia <span class="part2">Farha</span>
+            </a>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#achievements">Achievements</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
     </header>
 
     <main class="projects">

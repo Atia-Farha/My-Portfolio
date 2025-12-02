@@ -59,17 +59,24 @@ header {
     top: 0;
     z-index: 100;
     width: 100%;
-    height: 3em;
-    padding: 1em;
+    padding-left: 1em;
     background-color: white;
     border-bottom: 1px ridge gray;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
 
-header a {
+.nav-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.brand {
     font-size: 25px;
     text-decoration: none;
     font-family: 'Megrim', cursive;
@@ -92,6 +99,59 @@ header a {
 .part2 {
     color: black;
     font-weight: 300;
+}
+
+.hamburger {
+    width: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-links a {
+    padding: 1em;
+    transition: background-color 0.7s ease;
+    -webkit-transition: background-color 0.7s ease;
+    -moz-transition: background-color 0.7s ease;
+    -ms-transition: background-color 0.7s ease;
+    -o-transition: background-color 0.7s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-links a:active {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -432,8 +492,20 @@ h2 {
     fill: #7211F6;
 }
 
+.icon:hover .vue {
+    fill: #41B883;
+}
+
+.icon:hover .nuxt {
+    fill: #00dc82;
+}
+
 .icon:hover .php {
     fill: #4F5D95;
+}
+
+.icon:hover .mysql {
+    fill: #00618A;
 }
 
 .icon:hover .c {
@@ -444,16 +516,12 @@ h2 {
     fill: #004482;
 }
 
-.icon:hover .java {
-    fill: #EA2D2E;
-}
-
 .icon:hover .py {
     fill: #FFD845;
 }
 
-.icon:hover .mysql {
-    fill: #00618A;
+.icon:hover .java {
+    fill: #EA2D2E;
 }
 
 .icon:hover .git {
@@ -484,20 +552,16 @@ h2 {
     fill: #7955FE;
 }
 
-.icon:hover .intellij {
-    fill: #087CFA;
-}
-
 .icon:hover .pycharm {
     fill: #21D789;
 }
 
-.icon:hover .laravel {
-    fill: #f0513f;
+.icon:hover .intellij {
+    fill: #087CFA;
 }
 
-.icon:hover .vue {
-    fill: #41B883;
+.icon:hover .laravel {
+    fill: #f0513f;
 }
 
 .icon:hover .spring {
@@ -904,7 +968,42 @@ footer div a svg {
     color: #1787CA;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        padding-left: 0;
+        background-color: transparent;
+    }
+
+    .nav-main {
+        padding: 0.5em 1em;
+        background-color: white;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        border-top: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+@media all and (max-width: 1000px) {
     .hero {
         flex-direction: column;
         justify-content: center;
