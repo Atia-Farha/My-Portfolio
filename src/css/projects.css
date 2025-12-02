@@ -142,15 +142,16 @@ header {
 
 .nav-links a {
     padding: 1em;
-    color: gray;
-    transition: background-color 0.7s ease;
-    -webkit-transition: background-color 0.7s ease;
-    -moz-transition: background-color 0.7s ease;
-    -ms-transition: background-color 0.7s ease;
-    -o-transition: background-color 0.7s ease;
+    color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.7s ease, color 0.7s ease;
+    -webkit-transition: background-color 0.7s ease, color 0.7s ease;
+    -moz-transition: background-color 0.7s ease, color 0.7s ease;
+    -ms-transition: background-color 0.7s ease, color 0.7s ease;
+    -o-transition: background-color 0.7s ease, color 0.7s ease;
 }
 
 .nav-links a:hover {
+    color: black;
     background-color: rgba(0, 0, 0, 0.05);
 }
 
