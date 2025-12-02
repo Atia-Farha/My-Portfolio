@@ -61,7 +61,7 @@ header {
     width: 100%;
     padding-left: 1em;
     background-color: white;
-    border-bottom: 1px ridge gray;
+    border-bottom: 1px solid gray;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -970,9 +970,10 @@ footer div a svg {
 
 @media all and (max-width: 800px) {
     header {
-        flex-direction: column;
         padding-left: 0;
         background-color: transparent;
+        border-color: #ccc;
+        flex-direction: column;
     }
 
     .nav-main {
@@ -988,7 +989,7 @@ footer div a svg {
         display: none;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.95);
-        border-top: 1px solid rgba(0, 0, 0, 0.15);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.show {
