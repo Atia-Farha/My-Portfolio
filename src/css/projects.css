@@ -112,7 +112,7 @@ header {
 .hamburger span {
     display: block;
     height: 2px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 3px;
     transition: 0.3s;
 }
