@@ -119,6 +119,10 @@ header {
 
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+    -moz-transform: rotate(45deg) translate(5px, 5px);
+    -ms-transform: rotate(45deg) translate(5px, 5px);
+    -o-transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -138,6 +142,7 @@ header {
 
 .nav-links a {
     padding: 1em;
+    color: gray;
     transition: background-color 0.7s ease;
     -webkit-transition: background-color 0.7s ease;
     -moz-transition: background-color 0.7s ease;
