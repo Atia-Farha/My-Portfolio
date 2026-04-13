@@ -33,17 +33,6 @@ window.addEventListener('scroll', () => {
         (window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100) + '%';
 });
 
-/* Glassmorphic Nav */
-const nav = document.getElementById('nav');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 80) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-});
-
 /* Active Nav Link on Scroll */
 const navLinks = document.querySelectorAll('#nav .nav-links a');
 const sections = ['about', 'education', 'skills', 'projects', 'achievements', 'github-stats', 'contact'];
