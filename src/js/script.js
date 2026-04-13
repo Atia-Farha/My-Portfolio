@@ -190,7 +190,6 @@ async function loadProjects() {
         ScrollTrigger.refresh();
 
     } catch (error) {
-        console.error('Failed to load projects:', error);
         grid.innerHTML = `<p style="grid-column: 1 / -1; text-align: center; color: #888;">Failed to load projects. Please try again later.</p>`;
     }
 }
@@ -307,7 +306,6 @@ async function loadGitHubStats() {
         }, 100);
 
     } catch (error) {
-        console.error('Failed to load GitHub stats:', error);
         grid.innerHTML = `<p style="grid-column: 1 / -1; text-align: center; color: #888; padding: 2rem;">Failed to load GitHub statistics. Please try again later.</p>`;
     }
 }
