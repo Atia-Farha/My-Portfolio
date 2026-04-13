@@ -187,6 +187,7 @@ async function loadProjects() {
         });
 
         applyProjectAnimations();
+        ScrollTrigger.refresh();
 
     } catch (error) {
         console.error('Failed to load projects:', error);
@@ -302,6 +303,7 @@ async function loadGitHubStats() {
 
         setTimeout(() => {
             applyGitHubStatsAnimations();
+            ScrollTrigger.refresh();
         }, 100);
 
     } catch (error) {
