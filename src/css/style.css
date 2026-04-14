@@ -450,7 +450,7 @@ section {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 1.8rem;
 	letter-spacing: 0.1em;
-	color: var(--ash-800);
+	color: var(--ash-600);
 	display: flex;
 	align-items: center;
 	gap: 4rem;
@@ -459,8 +459,8 @@ section {
 
 .marquee-item::after {
 	content: "✦";
-	color: var(--ash-800);
-	font-size: 1rem;
+	color: var(--ash-600);
+	font-size: 1.5rem;
 }
 
 /* About */
