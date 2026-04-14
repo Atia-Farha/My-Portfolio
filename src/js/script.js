@@ -1,4 +1,3 @@
-
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 /* Custom cursor */
@@ -45,7 +44,6 @@ function setActiveLink() {
         if (!section) return;
 
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
 
         if (scrollY >= sectionTop - 150) {
             current = sectionId;
@@ -177,7 +175,6 @@ async function loadProjects() {
 
         applyProjectAnimations();
         ScrollTrigger.refresh();
-
     } catch (error) {
         grid.innerHTML = `<p style="grid-column: 1 / -1; text-align: center; color: #888;">Failed to load projects. Please try again later.</p>`;
     }
@@ -302,19 +299,10 @@ async function loadGitHubStats() {
 function applyGitHubStatsAnimations() {
     document.querySelectorAll('.github-stats-count[data-count]').forEach(el => {
         const target = +el.getAttribute('data-count');
-        ScrollTrigger.create({
-            trigger: el,
-            start: 'top 85%',
-            onEnter() {
-                gsap.to({ val: 0 }, {
-                    val: target,
-                    duration: 2,
-                    ease: 'power2.out',
-                    onUpdate() {
-                        el.textContent = Math.round(this.targets()[0].val);
-                    }
-                });
-            }
+        gsap.to({ val: 0 }, {
+            val: target, duration: 1.8, ease: 'power2.out',
+            onUpdate() { el.textContent = Math.round(this.targets()[0].val); },
+            scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
         });
     });
 
