@@ -160,11 +160,7 @@ async function loadProjects() {
 								${project.language ? `<span class="project-tag">${project.language}</span>` : ''}
 							</div>
 							<div class="project-footer">
-								<a href="https://github.com/${project.author}/${project.name}" 
-								target="_blank" 
-								class="project-link">
-									${project.stars > 0 ? 'View Project' : 'View on GitHub'}
-								</a>
+								<a href="https://github.com/${project.author}/${project.name}" target="_blank" class="project-link">View on GitHub</a>
 								<span class="project-arrow">↗</span>
 							</div>
 						</div>
